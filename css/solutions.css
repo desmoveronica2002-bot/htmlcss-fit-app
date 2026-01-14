@@ -54,12 +54,11 @@ body {
 }
 
 /* -------------------------- */
-/* 1) aggiungo icona fuoco */
+/* 1) aggiungo icona fuoco; uso selettore first-child e speudo-elemento ::before  */
 div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio del div - prendo la classe "stats-number - applico prima"*/
     content: "🔥 ";
     font-size: 30px; /* definisco le dimensioni */
     display: block; /* trasfomo la mia icona in blocco così da dargli una riga propria e non farlo salire */
-    text-align: center; /* specifico la posizione */
 }
 /* -------------------------- */
 
@@ -70,7 +69,7 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 }
 
 /* -------------------------- */
-/* 2) cambio sfondo e colori di una card*/
+/* 2) cambio sfondo e colori di una card; uso selettori :nth-child()*/
 
 .stats-container .stats-grid:nth-child(3) { /* prendo il contenitore - chiamo la classe stats-grid alla 3 posizione */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);; /* metto colore dentro il contenitore */
@@ -79,6 +78,15 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 .stats-grid:nth-child(3) .stat-number, /* chiamo stats-grid alla 3 posizione - chiamo stat-number */
 .stats-grid:nth-child(3) .stat-label { /* chiamo stats-grid alla 3 posizione - chiamo stat-label */
     color: white; /*applico il colore */
+}
+/* -------------------------- */
+/* 3) Effetto hover sulle cards; uso speudo-classe hover*/
+.stats-grid:hover {  
+    transform: translateY(-5px); /* se mettevo (5px scendeva) */
+    box-shadow: 0 10px 25px;
+	color: grey;
+	/*rendo piu fluido*/
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /*transition: rende animato - ease: è il tipo di movimento - box-shadow è l'ombra della card*/
 }
 /* -------------------------- */
 
