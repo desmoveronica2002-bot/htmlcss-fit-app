@@ -260,7 +260,13 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
     transition: border 0.50s ease, box-shadow 0.50s ease;
 }
 /* -------------------------- */
-
+/* 9) Miglioramenti al button */
+.save-btn:hover {
+  transform: translateY(-2px);
+  background: rgb(134, 38, 224); 
+  box-shadow: 0 6px 15px rgb(8, 8, 110);
+}
+/* -------------------------- */
 
 
 
