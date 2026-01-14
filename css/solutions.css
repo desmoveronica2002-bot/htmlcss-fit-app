@@ -84,7 +84,7 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 /* 3) Effetto hover sulle cards; uso speudo-classe hover*/
 .stats-grid:hover {  
     transform: translateY(-5px); /* se mettevo (5px scendeva) */
-    box-shadow: 0 10px 25px;
+    box-shadow:  0 10px 25px rgba(0,0,0,0.25);
 	color: grey;
 	/*rendo piu fluido*/
 	transition: transform 0.3s ease, box-shadow 0.3s ease; /*transition: rende animato - ease: è il tipo di movimento - box-shadow è l'ombra della card*/
@@ -357,6 +357,9 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 .nav-item:hover {
   background: rgb(4, 4, 52); /*sfondo più scuro*/
   color: #659de3; /*testo più scuro*/
+}
+.nav-item {
+  transition: background 1s ease, color 1s ease;
 }
 .nav-footer .nav-item:first-child { /*primo link sempre attivo*/
   background: rgb(4, 4, 52);
