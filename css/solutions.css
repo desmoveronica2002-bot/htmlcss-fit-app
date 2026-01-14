@@ -86,7 +86,7 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
     box-shadow: 0 10px 25px;
 	color: grey;
 	/*rendo piu fluido*/
-	transition: transform 0.3s ease, box-shadow 0.3s ease; /*transition: rende animato - ease: è il tipo di movimento - box-shadow è l'ombra della card*/
+	transition: transform 0.5s ease, box-shadow 0.5s ease; /*transition: rende animato - ease: è il tipo di movimento - box-shadow è l'ombra della card*/
 }
 /* -------------------------- */
 
@@ -194,7 +194,13 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 	border-left: 5px solid rgb(4, 117, 73); 
 }
 /* -------------------------- */
-
+/*6) aggiungo icona fulmine negli esercizi in posizione pari */
+.exercise-item:nth-child(even) .exercise-name::before { /*even significa pari*/
+    content: "⚡ ";
+    font-size: 15px;
+    display: block; 
+}
+/* -------------------------- */
 
 
 
@@ -241,6 +247,23 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 	width: 100%;
 	margin-top: 15px;
 }
+/* -------------------------- */
+/* 7 e 8) Focus sui campi input con obra e bordo blu */
+.goal-input-group input:focus, 
+.goal-input-group select:focus { /* campo input e select che stanno in focus*/
+    outline: none; /* tolgo bordo automatico */
+    border: 2px solid rgb(15, 15, 76);
+    box-shadow: 0 0 6px rgb(6, 6, 95);
+}
+.goal-input-group input,
+.goal-input-group select {
+    transition: border 0.50s ease, box-shadow 0.50s ease;
+}
+/* -------------------------- */
+
+
+
+
 
 /* Progress Bar */
 .progress-section {
