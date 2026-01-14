@@ -57,8 +57,9 @@ body {
 /* 1) aggiungo icona fuoco; uso selettore first-child e speudo-elemento ::before  */
 div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio del div - prendo la classe "stats-number - applico prima"*/
     content: "🔥 ";
-    font-size: 30px; /* definisco le dimensioni */
+    font-size: 30px; /* definisco le dimensioni*/
     display: block; /* trasfomo la mia icona in blocco così da dargli una riga propria e non farlo salire */
+
 }
 /* -------------------------- */
 
@@ -89,8 +90,6 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 	transition: transform 0.3s ease, box-shadow 0.3s ease; /*transition: rende animato - ease: è il tipo di movimento - box-shadow è l'ombra della card*/
 }
 /* -------------------------- */
-
-
 
 
 
@@ -201,7 +200,6 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
     display: block; 
 }
 /* -------------------------- */
-
 
 
 
@@ -369,8 +367,6 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 
 
 
-
-
 /* Quote inspirational */
 .quote-box {
 	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -386,7 +382,7 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 /* 13) virgolette decorative con opacità ridotta*/
 .quote-box::before {
   content: '"'; /* ho usato ' ' al posto di "" dato che in css si può usare*/
-  position: absolute;
+  position: absolute; 
   top: 20px;
   left: 20px;
   transform: translate(-19px, -30%);
@@ -404,9 +400,6 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
   color: rgba(255, 255, 255, 0.25);
 }
 /* -------------------------- */
-
-
-
 
 
 
