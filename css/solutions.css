@@ -90,6 +90,12 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 }
 /* -------------------------- */
 
+
+
+
+
+
+
 /* Workout Plans */
 .section-title {
 	font-size: 1.5rem;
@@ -152,6 +158,14 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 	color: white;
 }
 
+/* -------------------------- */
+/* 4) aggiungere bordo e cambiare sfondo */
+.workout-section .workout-plan:nth-of-type(2) { /*th-of-type prende i figli di un determinato tipo di tag */
+    background: rgb(236, 233, 157);
+    border-left: 5px solid orange; 
+}
+/* -------------------------- */
+
 /* Exercise List */
 .exercise-item {
 	background: #f8f9fa;
@@ -171,6 +185,21 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 	color: #666;
 	font-size: 0.9rem;
 }
+
+/* -------------------------- */
+/*5) Bordi verdi per primo e ultimo esercizio*/
+.exercise-item:nth-child(1),
+.exercise-item:nth-child(4) {
+    background-color: #c2f7d8;
+	border-left: 5px solid rgb(4, 117, 73); 
+}
+/* -------------------------- */
+
+
+
+
+
+
 
 /* Goals Section */
 .goals-container {
@@ -245,6 +274,15 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 	color: #2c3e50;
 	margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
 
 /* Navigation Footer */
 .nav-footer {
