@@ -296,7 +296,18 @@ div:first-child .stat-number::before {  /*chiamo il div-chiamo il primo figlio d
 	border-radius: 5px;
 	position: relative;
 }
-
+/* -------------------------- */
+/* 10)Percentuale nella barra di progresso */
+.progress-fill::after { /*after per creare un elemento*/
+  content: "65%";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 0.6rem;
+}
+/* -------------------------- */
 .progress-text {
 	text-align: center;
 	font-weight: bold;
